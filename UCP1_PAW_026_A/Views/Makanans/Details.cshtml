@@ -1,0 +1,36 @@
+﻿@model UCP1_PAW_026_A.Models.Makanan
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Makanan</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HargaMakanan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HargaMakanan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NamaMakanan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NamaMakanan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ketersediaan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ketersediaan)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdMakanan">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
